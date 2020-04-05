@@ -50,6 +50,14 @@
 						th:value="${ingredient.id}" /> <span th:text="${ingredient.name}">INGREDIENT</span><br />
 				</div>
 			</div>
+			
+			<div class="ingredient-group" id="ereza">
+				<h3>Zgjidh erezen:</h3>
+				<div th:each="ingredient : ${ereza}">
+					<input name="ingredients" type="checkbox"
+						th:value="${ingredient.id}" /> <span th:text="${ingredient.name}">INGREDIENT</span><br />
+				</div>
+			</div>
 		</div>
 		<div>
 			<h3>Name your taco creation:</h3>

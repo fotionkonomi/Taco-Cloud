@@ -1,5 +1,6 @@
 package tacos.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,5 +22,5 @@ public class Taco {
 	
 	@NotNull(message = "You must choose at least 1 ingredient")
 	@Size(min = 1, message = "You must choose at least 1 ingredient")
-	private List<String> ingredients;
+	private List<Ingredient> ingredients = new ArrayList<Ingredient>();
 }
