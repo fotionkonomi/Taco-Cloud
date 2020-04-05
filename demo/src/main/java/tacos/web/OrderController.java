@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import lombok.extern.slf4j.Slf4j;
-import tacos.data.OrderRepository;
+import tacos.data.jpa.OrderRepository;
 import tacos.model.Order;
 
 @Slf4j
